@@ -1,0 +1,29 @@
+<view class="drag-grid">
+  <view class="grid">
+    <view class="scroll-box">
+        <block
+          wx:for="{{list || []}}" 
+          wx:for-item="app" 
+          wx:for-index="i" 
+          wx:key="i"    
+        >
+          <view 
+            class="grid-item placeholder-grid-item" 
+            wx:if="{{ throughIndex===i }}"
+            style="width: {{100/columnnum}}vw;height: {{100/columnnum}}vw;"
+          >
+          </view>
+          <view
+            class="grid-item {{checkEle===i ? 'scroll-item position-item' : ''}}"
+            style="width: {{100/columnnum}}vw;height: {{100/columnnum}}vw; {{checkEle===i && ('left: '+startX+'px;top: '+startY+'px;')}}"
+            bindtouchstart="{{draggable ? 'start' : ''}}"
+            bindtouchmove="{{draggable ? 'move' : ''}}"
+            bindtouchend="{{draggable ? 'end' : ''}}"
+            data-index="{{i}}"
+          >
+            {{app.name}}
+          </view>
+        </block> 
+    </view>
+  </view>
+</view>

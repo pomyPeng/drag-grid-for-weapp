@@ -1,0 +1,9 @@
+<drag-grid
+  list="{{myAppList}}"
+  selectable="{{selectable}}"
+  draggable="{{true}}"
+  columnnum="{{3}}"
+  bind:updateList="updateList"
+>
+  
+</drag-grid>

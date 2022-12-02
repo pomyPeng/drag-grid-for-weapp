@@ -1,0 +1,54 @@
+/* pages/commonApp/components/DragGrid/DragGrid.wxss */
+.scroll-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+.outer-grid-item {
+  display: flex;
+}
+.grid .grid-item {
+  box-sizing: border-box;
+  border: 1px solid #f3f3f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+.drag-grid .title-area {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 20rpx 40rpx;
+}
+.drag-grid .title-area text {
+  font-size: 28rpx;
+  color: #797979;
+}
+.scroll-box {
+  width: 100%;
+  position: relative;
+  padding: 4rpx 0;
+}
+
+.scroll-box .relative {
+  position: relative;
+}
+
+.scroll-box .relative .control-area {
+  position: absolute;
+  right: 20rpx;
+  top: 0;
+}
+
+.scroll-box .scroll-item {
+  position: absolute;
+  z-index: 100;
+}
+
+.position-item {
+  box-shadow: 1rpx 1rpx 10rpx #ccc;
+}
+
+.placeholder-grid-item {
+  box-shadow: 0 0 18rpx #4F60CB inset;
+}
