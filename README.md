@@ -46,5 +46,9 @@
     bind:listChange="updateList"
   />
  ```
+
+ ## 效果
+ <img src="./imgs/image01.jpeg"/>
+ <img src="./imgs/image02.jpeg"/>
  
 
