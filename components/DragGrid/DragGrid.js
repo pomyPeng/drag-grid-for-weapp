@@ -83,7 +83,7 @@ Component({
           result.splice(this.data.checkEle+1, 1)
         }
       }
-      this.triggerEvent("updateList",result);
+      this.triggerEvent("listChange",result);
       this.setData({
         checkEle: "",
         startX: 0,

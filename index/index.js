@@ -2,7 +2,7 @@ const app = getApp()
 
 Page({
   data: {
-    myAppList: [
+    myList: [
       {name:"测试1"},
       {name:"测试2"},
       {name:"测试3"},
@@ -19,7 +19,7 @@ Page({
   },
   updateList(result) {
     this.setData({
-      myAppList:result.detail
+      myList:result.detail
     })
   }
 })

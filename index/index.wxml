@@ -1,9 +1,9 @@
 <drag-grid
-  list="{{myAppList}}"
+  list="{{myList}}"
   selectable="{{selectable}}"
   draggable="{{true}}"
   columnnum="{{3}}"
-  bind:updateList="updateList"
+  bind:listChange="updateList"
 >
   
 </drag-grid>
